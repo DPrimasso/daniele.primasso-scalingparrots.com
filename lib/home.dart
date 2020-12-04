@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
           builder: (context, state) {
             return RichText(
               text: TextSpan(
-                text: text,
+                text: StoreProvider.of<AppState>(context).state.response,
                 style: TextStyle(
                   fontSize: state.viewFontSize,
                   color: Colors.black,

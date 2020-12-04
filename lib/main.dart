@@ -8,10 +8,12 @@ import 'package:provaFlutter/settings.dart';
 import 'package:redux/redux.dart';
 
 void main() {
-  final _initialState = AppState(sliderFontSize: 0.5);
+  final _initialState = AppState(sliderFontSize: 0.5, response: "initial response");
   final Store<AppState> _store =
   Store<AppState>(reducer, initialState: _initialState);
 
+  print("_store.state.response");
+  print(_store.state.response);
   runApp(MyApp(store: _store));
 }
 

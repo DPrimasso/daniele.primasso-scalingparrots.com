@@ -12,3 +12,8 @@ class Italic {
   final bool payload;
   Italic(this.payload);
 }
+
+class SetResponse {
+  final String response;
+  SetResponse(this.response);
+}

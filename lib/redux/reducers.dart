@@ -11,6 +11,8 @@ AppState reducer(AppState prevState, dynamic action) {
     newState.bold = action.payload;
   } else if (action is Italic) {
     newState.italic = action.payload;
+  } else if (action is SetResponse){
+    newState.response = action.response;
   }
 
   return newState;

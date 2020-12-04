@@ -27,7 +27,7 @@ class About extends StatelessWidget {
           builder: (context, state) {
             return RichText(
               text: TextSpan(
-                text: text,
+                text: state.response,
                 style: TextStyle(
                   fontSize: state.viewFontSize,
                   color: Colors.lightBlue,

@@ -70,6 +70,8 @@ class Settings extends StatelessWidget {
                         onChanged: (newValue) {
                           StoreProvider.of<AppState>(context)
                               .dispatch(Italic(newValue));
+                          StoreProvider.of<AppState>(context)
+                              .dispatch(SetResponse("cambiata"));
                         }),
                     Text(
                       'Italic',
